@@ -1,6 +1,4 @@
 'use strict';
-// const score= Number(document.querySelector('.score').textContent);
-// console.log(score);
 
 function displayMessage(message) {
     document.querySelector('.message').textContent = message;
@@ -37,23 +35,10 @@ document.querySelector('.check').addEventListener('click', function () {
             document.querySelector('.score').textContent = 0;
         }
     }
-    // when the guess is too low
-    // else if (guess<secrectNumber){
-    //     if (score>1){
-    //         document.querySelector('.message').textContent='Too Low!';
-    //         score--;
-    //         document.querySelector('.score').textContent=score;
-    //     }
-    //     else {
-    //         document.querySelector('.message').textContent='You Lose The Game';
-    //         document.querySelector('.score').textContent=0;
-    //     }
-    // }
 })
 
 // again function without reload the page
 document.querySelector('.again').addEventListener('click', function () {
-    // window.location.reload()
     score = 20;
     secrectNumber = Math.trunc(Math.random() * 20) + 1;
     document.querySelector('.score').textContent = score;
